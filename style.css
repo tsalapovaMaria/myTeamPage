@@ -128,14 +128,22 @@ html,body {
 
 @media all and (min-width: 768px){
     .page-container {
-        padding-left: 240px;
-        padding-right: 240px;
+        width: 1000px;
+        margin: 0 auto;
     }
     .text-container {
-        height: 243px;
         display: flex;
+
+        height: 243px;
+        padding: 0 70px;
+        
         justify-content: space-between;
         align-items: center;
+    }
+
+    .team-container{
+        vertical-align: middle;
+        max-width: none;
     }
 
     .main-title {
@@ -146,22 +154,24 @@ html,body {
         flex-basis: 50%;
     }
 
-    .team-container {
-        max-width: none;
-    }
     .team-member {
         margin-top: 87px;
+        float: left;
+    }
+    .team-member{
+        margin-left: 70px;
     }
 
-    .team-member-l-left{
-        float: left;
+    .empty-space {
+        display: none;
     }
-    .team-member-l-right{
-        float: left;
+    .team-member-left{
+        float: none;
     }
-    .team-member-l-center{
-        float: left;
+    .team-member-right{
+        float: none;
     }
+
     
     .member-photo {
         width: 240px;
