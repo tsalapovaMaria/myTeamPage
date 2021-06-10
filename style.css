@@ -122,7 +122,6 @@ html,body {
     }
     .text-container {
         display: flex;
-        padding: 0 50px;
 
         height: 243px;
         
@@ -138,7 +137,6 @@ html,body {
     }
 
     .team-container{
-
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
