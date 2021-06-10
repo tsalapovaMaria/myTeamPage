@@ -43,6 +43,12 @@ html,body {
     max-width: 320px;
 }
 
+.team-container:after {    
+    clear: both;
+    content: "";
+    display: block;
+}
+
 .team-member {
     position: relative;
     margin-top: 64px;
