@@ -125,3 +125,57 @@ html,body {
 .created-by .username {
     font-weight: 700;
 }
+
+@media all and (min-width: 768px){
+    .page-container {
+        padding-left: 240px;
+        padding-right: 240px;
+    }
+    .text-container {
+        height: 243px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-title {
+        margin-top: 0;
+        flex-basis: 50%;
+    }
+    .additional-text-container {
+        flex-basis: 50%;
+    }
+
+    .team-container {
+        max-width: none;
+    }
+    .team-member {
+        margin-top: 87px;
+    }
+
+    .team-member-l-left{
+        float: left;
+    }
+    .team-member-l-right{
+        float: left;
+    }
+    .team-member-l-center{
+        float: left;
+    }
+    
+    .member-photo {
+        width: 240px;
+    }
+    .member-position {
+        top: 0;
+        left: 260px;
+
+        font-size: 12px;
+    }    
+    .member-name {
+        left: 0;
+        top: 365px;
+    
+        font-size: 18px;    
+    }
+}
