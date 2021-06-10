@@ -15,7 +15,6 @@ html,body {
     font-weight: bold;
 
     font-size: 36px;
-    line-height: 48px;
     letter-spacing: -0.045em;
 }
 
@@ -24,7 +23,6 @@ html,body {
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
-    line-height: 27px;
 
     text-transform: uppercase;
 }
@@ -34,7 +32,6 @@ html,body {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 21px;
 }
 
 .team-container {
@@ -52,20 +49,15 @@ html,body {
 .team-member {
     position: relative;
     margin-top: 64px;
-}
-.team-member + .team-member {
-    margin-top: 80px;
-}
-
-.team-member-left{
     float: left;
 }
-.team-member-right{
+
+.team-member:nth-child(2n){
+    margin-top: 80px;
     float: right;
 }
-
-.empty-space {
-    height: 48px;
+.team-member:nth-child(2){
+    margin-top: 120px;
 }
 
 .member-photo {
@@ -85,7 +77,6 @@ html,body {
     font-weight: normal;
     font-size: 10px;
 
-    line-height: 13px;
     text-transform: uppercase;
 
     transform-origin: top left;
@@ -101,8 +92,6 @@ html,body {
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
-
-    line-height: 21px;
 }
 
 .copyright {
@@ -126,26 +115,20 @@ html,body {
     font-weight: 700;
 }
 
-@media all and (min-width: 768px){
+@media all and (min-width: 902px){
     .page-container {
         width: 1000px;
         margin: 0 auto;
     }
     .text-container {
         display: flex;
+        padding: 0 50px;
 
         height: 243px;
-        padding: 0 70px;
         
         justify-content: space-between;
         align-items: center;
     }
-
-    .team-container{
-        vertical-align: middle;
-        max-width: none;
-    }
-
     .main-title {
         margin-top: 0;
         flex-basis: 50%;
@@ -154,15 +137,23 @@ html,body {
         flex-basis: 50%;
     }
 
+    .team-container{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+
+        max-width: none;
+    }
     .team-member {
         margin-top: 87px;
-        float: left;
     }
-    .team-member{
-        margin-left: 70px;
+    .team-member:nth-of-type(3n+2){
+        margin-top: 150px;
     }
 
     .empty-space {
+        margin: 0;
         display: none;
     }
     .team-member-left{
@@ -171,9 +162,8 @@ html,body {
     .team-member-right{
         float: none;
     }
-
     
-    .member-photo {
+    .member-photo {        
         width: 240px;
     }
     .member-position {
