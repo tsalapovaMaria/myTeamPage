@@ -72,16 +72,13 @@ html,body {
     width: 140px;
 }
 
-.member-position-wrap {
-    position: absolute;
-    max-width: 150px;
-    top: 32px;
-    transform: rotate(90deg);
-}
 
 .member-position {
-    position: relative;
-    bottom: 110px;
+    position: absolute;
+    top: 0;
+    left: 160px;
+
+    white-space: nowrap;
 
     font-family: PT Serif;
     font-style: normal;
@@ -90,6 +87,9 @@ html,body {
 
     line-height: 13px;
     text-transform: uppercase;
+
+    transform-origin: top left;
+    transform: rotate(90deg);
 }
 
 .member-name {
