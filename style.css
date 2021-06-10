@@ -37,24 +37,45 @@ html,body {
     line-height: 21px;
 }
 
+.team-container {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 320px;
+}
+
 .team-member {
     position: relative;
     margin-top: 64px;
-    width: 50%;
+}
+.team-member + .team-member {
+    margin-top: 80px;
 }
 
 .team-member-left{
     float: left;
+}
+.team-member-right{
+    float: right;
+}
+
+.empty-space {
+    height: 48px;
 }
 
 .member-photo {
     width: 140px;
 }
 
-.member-position {
+.member-position-wrap {
     position: absolute;
-    top: 10px;
-    left: 130px;
+    max-width: 150px;
+    top: 32px;
+    transform: rotate(90deg);
+}
+
+.member-position {
+    position: relative;
+    bottom: 110px;
 
     font-family: PT Serif;
     font-style: normal;
@@ -63,8 +84,6 @@ html,body {
 
     line-height: 13px;
     text-transform: uppercase;
-
-    transform: rotate(90deg);
 }
 
 .member-name {
@@ -78,4 +97,25 @@ html,body {
     font-size: 14px;
 
     line-height: 21px;
+}
+
+.copyright {
+    margin-top: 115px;
+    margin-bottom: 24px;
+
+    align-self: center;
+}
+
+.created-by {    
+    margin: 0;
+    text-align: center;
+
+    font-size: 14px;
+    font-family: 'Montserrat';
+
+    color: #BDBDBD;
+}
+
+.created-by .username {
+    font-weight: 700;
 }
